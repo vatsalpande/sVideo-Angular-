@@ -1,0 +1,18 @@
+<div>
+  <div class='details'>
+    <app-header showbacklink = "true"></app-header>
+    <section class="headerSection">
+      <h1>{{$ctrl.detail.title}}</h1>
+      <h2>({{$ctrl.detail.year}})</h2>
+      <!--<img src='/public/img/loading.png' alt='loader'-->
+           <!--ng-hide="!!$ctrl.rating"/>-->
+      <h3 ng-show="!!$ctrl.rating">{{$ctrl.rating}}</h3>
+      <img src="/img/posters/{{$ctrl.detail.poster}}" />
+      <p>{{$ctrl.detail.description}}</p>
+    </section>
+    <div>
+      <iframe src="{{$ctrl.youTubeUrl}}"  frameBorder='0' allowFullScreen />
+    </div>
+  </div>
+</div>
+

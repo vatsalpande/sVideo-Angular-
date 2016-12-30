@@ -1,0 +1,19 @@
+<header>
+  <h1>
+    <a ui-sref="landing">
+    sVideo
+    </a>
+  </h1>
+  <search-show ng-show="$ctrl.issearchavailable"
+               on-search="$ctrl.searchShow($event)">
+
+  </search-show>
+
+
+  <h2 ng-show="$ctrl.showbacklink">
+    <a ui-sref="search" class="backHeader">
+      Back
+    </a>
+  </h2>
+
+</header>

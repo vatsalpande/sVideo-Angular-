@@ -6,10 +6,10 @@ var test = {
 angular
   .module('components.test')
   .component('test', test)
-  .config(function($stateProvider, $urlRouterProvider) {
+  .config(function($stateProvider) {
     $stateProvider.state('test', {
         url:'/test',
         component:'test'
       })
-    $urlRouterProvider.otherwise('/test');
+    //$urlRouterProvider.otherwise('/test');
   });

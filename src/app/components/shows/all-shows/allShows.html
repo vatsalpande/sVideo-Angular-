@@ -1,0 +1,9 @@
+<div class="search">
+  <app-header issearchavailable="true"
+              on-search="$ctrl.filterShows($event)"></app-header>
+  <div class="show-container">
+    <show-card show="value"
+               ng-repeat="(key, value) in $ctrl.shows"></show-card>
+  </div>
+</div>
+

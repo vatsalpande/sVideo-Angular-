@@ -1,1 +1,5 @@
-angular.module('components',['components.test']);
+angular.module('components', [
+    'components.test',
+    'components.landing',
+    'components.shows'
+  ]);
